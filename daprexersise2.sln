@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegoService", "LegoService\LegoService.csproj", "{7528E289-9B36-45ED-B5C9-ADF333F3719C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PricingService", "PricingService\PricingService.csproj", "{F1DAA943-72F8-4891-8376-ED5F73562ACF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasketService", "BasketService\BasketService.csproj", "{B9E41FC4-D59A-4764-BE53-FA2767AA1F6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7528E289-9B36-45ED-B5C9-ADF333F3719C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7528E289-9B36-45ED-B5C9-ADF333F3719C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7528E289-9B36-45ED-B5C9-ADF333F3719C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7528E289-9B36-45ED-B5C9-ADF333F3719C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1DAA943-72F8-4891-8376-ED5F73562ACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1DAA943-72F8-4891-8376-ED5F73562ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1DAA943-72F8-4891-8376-ED5F73562ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1DAA943-72F8-4891-8376-ED5F73562ACF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9E41FC4-D59A-4764-BE53-FA2767AA1F6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9E41FC4-D59A-4764-BE53-FA2767AA1F6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9E41FC4-D59A-4764-BE53-FA2767AA1F6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9E41FC4-D59A-4764-BE53-FA2767AA1F6A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,3 @@
+
+### get all sets
+GET http://localhost:5010/v1.0/invoke/LegoServiceDapr/method/sets

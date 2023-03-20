@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "S80zdJANdX0/wfNAavULWWtGPIABOk6nAoiBiA6polJo1CmsE8TldYiJkBb3Bh+FaIBOzrP1eEFf4NqAOLmmMA==",
+  "success": true,
+  "projectFilePath": "/home/jarne/RiderProjects/daprexersise2/BasketService/BasketService.csproj",
+  "expectedPackageFiles": [
+    "/home/jarne/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.2/microsoft.aspnetcore.app.ref.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

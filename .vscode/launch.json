@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "LegoService",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "dapr-debug-lego",
+            "program": "${workspaceFolder}/LegoService/bin/Debug/net7.0/LegoService.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/LegoService",
+            "stopAtEntry": false,
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            },
+            "postDebugTask": "daprd-down-lego"
+        }
+    ]
+}

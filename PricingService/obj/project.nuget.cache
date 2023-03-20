@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "kfnDAdkpZdty8xXYdr9Cm9PU5huCgPL6GStbhsiSPoaKe6dnAn7HivRHnVWVyDqkWzdI5o2gUCfHsJJQvnE1XQ==",
+  "success": true,
+  "projectFilePath": "/home/jarne/RiderProjects/daprexersise2/PricingService/PricingService.csproj",
+  "expectedPackageFiles": [
+    "/home/jarne/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.2/microsoft.aspnetcore.app.ref.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

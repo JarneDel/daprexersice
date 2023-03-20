@@ -1,0 +1,16 @@
+### create test data
+
+GET http://localhost:5070/createtestdata
+
+### get all sets
+
+GET http://localhost:5070/sets
+
+### get set by id
+GET http://localhost:5070/sets/64182391f66d95a97ed62f12
+
+### get all themes
+GET http://localhost:5070/themes
+
+### get set by themeId
+GET http://localhost:5070/sets/theme/641823123d2acbc37e3fb0b5
