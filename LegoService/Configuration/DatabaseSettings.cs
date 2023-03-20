@@ -6,4 +6,4 @@ public class DatabaseSettings
     public string? DatabaseName { get; set; }
     public string? SetCollectionName { get; set; }
     public string? ThemeCollectionName { get; set; }
-}
+} 
