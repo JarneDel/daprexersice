@@ -1,5 +1,6 @@
 using LegoService.Configuration;
 using LegoService.Models;
+using LegoService.Services;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
@@ -12,17 +13,17 @@ public class MongoContext: IMongoContext
     private readonly IMongoDatabase _database;
 
     private readonly DatabaseSettings _settings;
-    
-    
+
     public IMongoClient Client => _client;
     public IMongoDatabase Database => _database;
     
-    public MongoContext(IOptions<DatabaseSettings> dbOptions)
+    public MongoContext(ISecretsService secretsService)
     {
-        _settings = dbOptions.Value;
+        _settings = secretsService.GetDatabaseSettings().Result;
         _client = new MongoClient(_settings.ConnectionString);
         _database = _client.GetDatabase(_settings.DatabaseName);
     }
+
     
     public IMongoCollection<LegoSet> SetCollection => _database.GetCollection<LegoSet>(_settings.SetCollectionName);
     public IMongoCollection<LegoTheme> ThemeCollection => _database.GetCollection<LegoTheme>(_settings.ThemeCollectionName );

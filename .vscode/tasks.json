@@ -42,6 +42,7 @@
             "appPort": 5001,
             "httpPort": 5010,
             "grpcPort": 60001,
+            "componentsPath": "./components",
             "label": "dapr-debug-lego",
             "type": "dapr"
         },

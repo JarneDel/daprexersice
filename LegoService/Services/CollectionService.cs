@@ -3,18 +3,18 @@ using LegoService.Repositories;
 
 namespace LegoService.Services;
 
-public class LegoService : ILegoService
+public class CollectionService : ICollectionService
 {
     private readonly ILegoRepository _legoRepository;
 
-    public LegoService(ILegoRepository legoRepository)
+    public CollectionService(ILegoRepository legoRepository)
     {
         _legoRepository = legoRepository;
     }
 
     public async Task<List<LegoTheme>> GetThemes()
     {
-        return await _legoRepository.GetThemes(); 
+        return await _legoRepository.GetThemes();
     }
 
     public async Task<List<LegoSet>> GetSets()
@@ -74,7 +74,7 @@ public class LegoService : ILegoService
     }
 }
 
-public interface ILegoService
+public interface ICollectionService
 {
     Task<List<LegoTheme>> GetThemes();
     Task<List<LegoSet>> GetSets();
