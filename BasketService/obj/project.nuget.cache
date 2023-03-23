@@ -1,9 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "S80zdJANdX0/wfNAavULWWtGPIABOk6nAoiBiA6polJo1CmsE8TldYiJkBb3Bh+FaIBOzrP1eEFf4NqAOLmmMA==",
+  "dgSpecHash": "jxmoPvL5XCnKpRfvvz30Gn1DFCkPcUHMI1Y5dwayDrDXrlxS13jfMSoBrcdcCq3Qe5boO0dzziJKqYlhpkN4MA==",
   "success": true,
   "projectFilePath": "/home/jarne/RiderProjects/daprexersise2/BasketService/BasketService.csproj",
   "expectedPackageFiles": [
+    "/home/jarne/.nuget/packages/dapr.aspnetcore/1.10.0/dapr.aspnetcore.1.10.0.nupkg.sha512",
+    "/home/jarne/.nuget/packages/dapr.client/1.10.0/dapr.client.1.10.0.nupkg.sha512",
+    "/home/jarne/.nuget/packages/fluentvalidation/11.5.1/fluentvalidation.11.5.1.nupkg.sha512",
+    "/home/jarne/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.1/fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
+    "/home/jarne/.nuget/packages/google.api.commonprotos/2.2.0/google.api.commonprotos.2.2.0.nupkg.sha512",
+    "/home/jarne/.nuget/packages/google.protobuf/3.15.0/google.protobuf.3.15.0.nupkg.sha512",
+    "/home/jarne/.nuget/packages/grpc.core.api/2.47.0/grpc.core.api.2.47.0.nupkg.sha512",
+    "/home/jarne/.nuget/packages/grpc.net.client/2.47.0/grpc.net.client.2.47.0.nupkg.sha512",
+    "/home/jarne/.nuget/packages/grpc.net.common/2.47.0/grpc.net.common.2.47.0.nupkg.sha512",
+    "/home/jarne/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/2.1.0/microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
+    "/home/jarne/.nuget/packages/microsoft.extensions.logging.abstractions/3.0.3/microsoft.extensions.logging.abstractions.3.0.3.nupkg.sha512",
+    "/home/jarne/.nuget/packages/system.io.pipelines/4.7.2/system.io.pipelines.4.7.2.nupkg.sha512",
+    "/home/jarne/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
+    "/home/jarne/.nuget/packages/system.net.http.json/5.0.0/system.net.http.json.5.0.0.nupkg.sha512",
+    "/home/jarne/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "/home/jarne/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.2/microsoft.aspnetcore.app.ref.7.0.2.nupkg.sha512"
   ],
   "logs": []
