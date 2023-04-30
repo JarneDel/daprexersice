@@ -5,13 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": ".NET Core Launch (web) with Dapr",
+            "name": ".NET Core Launch (web)",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "dapr-debug-catalog",
-            "program": "${workspaceFolder}/LegoService/bin/Debug/net7.0/LegoService.dll",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/BasketService/bin/Debug/net7.0/BasketService.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/LegoService",
+            "cwd": "${workspaceFolder}/BasketService",
             "stopAtEntry": false,
             "serverReadyAction": {
                 "action": "openExternally",
@@ -22,8 +22,23 @@
             },
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": ".NET Core Launch (web) with Dapr",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/BasketService/bin/Debug/net7.0/BasketService.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/BasketService",
+            "stopAtEntry": false,
+            "launchSettingsProfile": "${workspaceFolder}/BasketService/Properties/launchSettings.json",
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
             },
-            "postDebugTask": "daprd-down-catalog"
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            },
         }
     ]
 }

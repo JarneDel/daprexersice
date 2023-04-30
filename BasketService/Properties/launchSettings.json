@@ -8,6 +8,12 @@
     }
   },
   "profiles": {
+    "dapr": {
+      "commandName": "Executable",
+      "workingDirectory": "$(ProjectDir)",
+      "executablePath": "dapr",
+      "commandLineArgs": "run -a BasketService -H 5013 -p 5003 -G 60003 --resources-path ../components/ dotnet run"
+    },
     "http": {
       "commandName": "Project",
       "dotnetRunMessages": true,

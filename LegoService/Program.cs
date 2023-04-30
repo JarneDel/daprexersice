@@ -1,7 +1,10 @@
+using System.Diagnostics;
 using LegoService.Configuration;
 using LegoService.DataContext;
 using LegoService.Repositories;
 using LegoService.Services;
+
+Debugger.Launch();
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDaprClient(opt => opt.UseHttpEndpoint("http://localhost:5010").UseGrpcEndpoint("http://localhost:60001"));

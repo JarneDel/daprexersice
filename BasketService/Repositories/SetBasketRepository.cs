@@ -1,3 +1,4 @@
+using System.Text.Json;
 using BasketService.Models;
 using Dapr.Client;
 
@@ -14,10 +15,10 @@ public class SetBasketRepository : ISetBasketRepository
 
     public async Task<CustomerBasket?> GetBasketAsync(string email)
     {
-        return await _daprClient.GetStateAsync<CustomerBasket>("statestore", email);
+        var state =  await _daprClient.GetStateAsync<CustomerBasket>("redisStore", email);
+        return state;
     }
-
-
+    
     public async Task<CustomerBasket> AddToBasketAsync(BasketItem basketItem)
     {
         try
@@ -33,7 +34,12 @@ public class SetBasketRepository : ISetBasketRepository
 
             basket.Items.Add(basketItem);
             // todo: calculate price
-            await _daprClient.SaveStateAsync("statestore", basket.Email, basket);
+
+            var requestMessage = _daprClient.CreateInvokeMethodRequest<List<BasketItem>>(HttpMethod.Post, "PricingService", "price/", basket.Items);
+            var totalPrice = await _daprClient.InvokeMethodAsync<decimal>(requestMessage);
+            
+            basket.TotalPrice = totalPrice;
+            await _daprClient.SaveStateAsync("redisStore", basket.Email, basket);
             return basket;
         }
         catch (Exception e)
@@ -46,7 +52,7 @@ public class SetBasketRepository : ISetBasketRepository
 
     public async Task DeleteBasketAsync(string email)
     {
-        await _daprClient.DeleteStateAsync("statestore", email);
+        await _daprClient.DeleteStateAsync("redisStore", email);
     }
 }
 

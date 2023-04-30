@@ -2,12 +2,12 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build-catalog",
+            "label": "build",
             "command": "dotnet",
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/LegoService/LegoService.csproj",
+                "${workspaceFolder}/BasketService/BasketService.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/LegoService/LegoService.csproj",
+                "${workspaceFolder}/BasketService/BasketService.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,23 +33,20 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/LegoService/LegoService.csproj"
+                "${workspaceFolder}/BasketService/BasketService.csproj"
             ],
             "problemMatcher": "$msCompile"
         },
         {
-            "appId": "catalog",
-            "appPort": 5001,
-            "httpPort": 5010,
-            "grpcPort": 60001,
-            "componentsPath": "${workspaceFolder}/components",
-            "label": "dapr-debug-catalog",
+            "appId": "BasketService",
+            "appPort": 5003,
+            "label": "dapr-debug",
             "type": "dapr",
-            "dependsOn": "build-catalog"
+            "dependsOn": "build"
         },
         {
-            "appId": "catalog",
-            "label": "daprd-down-catalog",
+            "appId": "BasketService",
+            "label": "daprd-down",
             "type": "daprd-down"
         }
     ]

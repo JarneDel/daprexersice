@@ -14,6 +14,7 @@ public class RedisBasketService: IRedisBasketService
         
     }
     public async Task<CustomerBasket?> GetBasketAsync(string email) => await _setBasketRepository.GetBasketAsync(email);
+    
 
     public async Task<CustomerBasket> AddToBasketAsync(BasketItem basketItem) => await _setBasketRepository.AddToBasketAsync(basketItem);
 

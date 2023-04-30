@@ -8,6 +8,12 @@
     }
   },
   "profiles": {
+    "dapr": {
+      "commandName": "Executable",
+      "workingDirectory": "$(ProjectDir)",
+      "executablePath": "dapr",
+      "commandLineArgs": "run -a PricingService -H 5012 -p 5002 -G 60002 --resources-path ../components/ dotnet run"
+    },
     "http": {
       "commandName": "Project",
       "dotnetRunMessages": true,

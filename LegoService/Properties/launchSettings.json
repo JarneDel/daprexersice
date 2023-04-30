@@ -8,6 +8,12 @@
     }
   },
   "profiles": {
+    "dapr": {
+      "commandName": "Executable",
+      "workingDirectory": "$(ProjectDir)",
+      "executablePath": "dapr",
+      "commandLineArgs": "run -a CatalogService -H 5010 -p 5001 -G 60001 --resources-path ../components/ dotnet run"
+    },
     "http": {
       "commandName": "Project",
       "dotnetRunMessages": true,

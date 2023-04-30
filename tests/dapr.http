@@ -1,3 +1,51 @@
 
 ### get all sets
-GET http://localhost:5010/v1.0/invoke/LegoServiceDapr/method/sets
+GET http://localhost:5010/v1.0/invoke/CatalogService/method/sets
+
+### Get all themes
+GET http://localhost:5010/v1.0/invoke/CatalogService/method/themes
+
+### Get sets by id
+
+GET http://localhost:5010/v1.0/invoke/CatalogService/method/sets/64182391f66d95a97ed62f12
+
+
+### Get sets by theme
+GET http://localhost:5010/v1.0/invoke/CatalogService/method/sets/theme/641823123d2acbc37e3fb0b6
+
+### Get total price of basket
+
+POST http://localhost:5010/v1.0/invoke/PricingService/method/price/
+Content-Type: application/json
+
+ [
+        {
+            "LegoSetID": "64182391f66d95a97ed62f12",
+            "email": "asdf@sdaf.com",
+            "Quantity": 1
+        },
+   {
+     "LegoSetID": "64182391f66d95a97ed62f13",
+     "email": "asdf@sdaf.com",
+     "Quantity": 2
+   }
+ ]
+
+### test pricing service
+GET http://localhost:5010/v1.0/invoke/PricingService/method/
+
+
+### Basket service
+
+### Get basket by email
+GET http://localhost:5010/v1.0/invoke/BasketService/method/basket/
+
+### add item to basket
+POST http://localhost:5010/v1.0/invoke/BasketService/method/basket/
+Content-Type: application/json
+
+{
+  "LegoSetID": "64182391f66d95a97ed62f12",
+  "email": "asdf@sdaf.com",
+  "Quantity": 1
+}
