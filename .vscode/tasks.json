@@ -2,7 +2,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build-lego",
+            "label": "build-catalog",
             "command": "dotnet",
             "type": "process",
             "args": [
@@ -38,17 +38,18 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "appId": "LegoServiceDapr",
+            "appId": "catalog",
             "appPort": 5001,
             "httpPort": 5010,
             "grpcPort": 60001,
-            "componentsPath": "./components",
-            "label": "dapr-debug-lego",
-            "type": "dapr"
+            "componentsPath": "${workspaceFolder}/components",
+            "label": "dapr-debug-catalog",
+            "type": "dapr",
+            "dependsOn": "build-catalog"
         },
         {
-            "appId": "LegoServiceDapr",
-            "label": "daprd-down-lego",
+            "appId": "catalog",
+            "label": "daprd-down-catalog",
             "type": "daprd-down"
         }
     ]
